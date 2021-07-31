@@ -10,9 +10,10 @@ describe ('AgeCalculator', () => {
   });
 
   test('should correctly calculate users Mercury age',() =>{
-    let mercuryAge = new AgeCalculator ("Sisi",15);
+    let mercuryAge = new AgeCalculator ("Sisi",15,100);
     expect(mercuryAge.name).toEqual("Sisi");
     expect(mercuryAge.checkMercuryAge()).toEqual(4);
+    expect(mercuryAge.remainingMercuryLife()).toEqual(58);
   });
 
   test('should correctly calculate users Venus age', () =>{

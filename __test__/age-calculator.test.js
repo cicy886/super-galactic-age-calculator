@@ -22,4 +22,9 @@ describe ('AgeCalculator', () => {
     expect(marsAge.checkMarsAge()).toEqual(28);
   });
 
+  test('should correctly calculate users Jupiter age', () =>{
+    let jupiterAge = new AgeCalculator (15);
+    expect(jupiterAge.checkJupiterAge()).toEqual(177);
+  });
+
 });

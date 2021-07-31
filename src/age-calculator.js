@@ -14,4 +14,9 @@ export class AgeCalculator{
   checkMarsAge(){
     return this.age = Math.round(this.age*1.88);
   }
+
+  checkJupiterAge(){
+    return this.age = Math.round(this.age*11.86);
+  }
+
 }

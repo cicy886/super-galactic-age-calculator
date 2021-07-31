@@ -21,4 +21,7 @@ export class AgeCalculator{
     return this.age = Math.round(this.age*11.86);
   }
 
+  remainingMercuryLife(){
+    return this.lifeExpectancy = this.lifeExpectancy*0.62 - this.age;
+  }
 }

@@ -3,10 +3,10 @@ import {AgeCalculator} from './../src/age-calculator.js';
 describe ('AgeCalculator', () => {
 
   test('should correctly receive users name, age and life expectancy',() =>{
-    const ageCalculator= new AgeCalculator ("Sisi",15);
+    const ageCalculator= new AgeCalculator ("Sisi",15,100);
     expect(ageCalculator.name).toEqual("Sisi");
     expect(ageCalculator.age).toEqual(15);
-    expect(ageCalculator.lifeExpectancy).toEqual(100);
+    expect(ageCalculator.lifeExpectancy).toEqual(99);
   });
 
   test('should correctly calculate users Mercury age',() =>{

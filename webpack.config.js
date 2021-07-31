@@ -16,7 +16,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Project Template',
+      title: 'Super Galactic Age Calculator',
       template: './src/index.html',
       inject: 'body'
     })

@@ -1,11 +1,12 @@
-import {AgeCalculator} from '../src/age-calculator.js';
+import {AgeCalculator} from './../src/age-calculator.js';
 
 describe ('AgeCalculator', () => {
 
-  test('should correctly receive users name and age',() =>{
+  test('should correctly receive users name, age and life expectancy',() =>{
     const ageCalculator= new AgeCalculator ("Sisi",15);
     expect(ageCalculator.name).toEqual("Sisi");
     expect(ageCalculator.age).toEqual(15);
+    expect(ageCalculator.lifeExpectancy).toEqual(100);
   });
 
   test('should correctly calculate users Mercury age',() =>{

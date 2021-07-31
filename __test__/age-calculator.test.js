@@ -24,7 +24,7 @@ describe ('AgeCalculator', () => {
 
   test('should correctly calculate users Jupiter age', () =>{
     let jupiterAge = new AgeCalculator (15);
-    expect(jupiterAge.checkJupiterAge()).toEqual(177);
+    expect(jupiterAge.checkJupiterAge()).toEqual(178);
   });
 
 });

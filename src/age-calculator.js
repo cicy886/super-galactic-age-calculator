@@ -8,6 +8,10 @@ export class AgeCalculator{
   }
 
   checkVenusAge(){
-    return this.age = Math.round(this.age*0.62)
+    return this.age = Math.round(this.age*0.62);
+  }
+
+  checkMarsAge(){
+    return this.age = Math.round(this.age*1.88);
   }
 }

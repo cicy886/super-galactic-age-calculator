@@ -6,7 +6,7 @@ describe ('AgeCalculator', () => {
     const ageCalculator= new AgeCalculator ("Sisi",15,100);
     expect(ageCalculator.name).toEqual("Sisi");
     expect(ageCalculator.age).toEqual(15);
-    expect(ageCalculator.lifeExpectancy).toEqual(99);
+    expect(ageCalculator.lifeExpectancy).toEqual(100);
   });
 
   test('should correctly calculate users Mercury age',() =>{

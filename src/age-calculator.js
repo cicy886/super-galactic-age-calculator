@@ -25,6 +25,8 @@ export class AgeCalculator{
     return this.lifeExpectancy = this.lifeExpectancy*0.24 - this.age;
   }
 
-
+  remainingVenusLife(){
+    return this.lifeExpectancy = this.lifeExpectancy*0.62 - this.age;
+  }
 
 }

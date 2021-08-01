@@ -33,4 +33,8 @@ export class AgeCalculator{
     return this.lifeExpectany = this.lifeExpectancy*1.88 - this.age;
   }
 
+  remainingJupiterLife(){
+    return this.lifeExpectany = this.lifeExpectancy*11.86 - this.age;
+  }
+
 }

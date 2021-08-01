@@ -24,10 +24,10 @@ describe ('AgeCalculator', () => {
   });
 
   test('should correctly calculate users Mars age', () =>{
-    let marsAge = new AgeCalculator ("Sisi",15,100);
+    let marsAge = new AgeCalculator ("Sisi",105,100);
     expect(marsAge.name).toEqual("Sisi");
-    expect(marsAge.checkMarsAge()).toEqual(28);
-    expect(marsAge.remainingMarsLife()).toEqual(160);
+    expect(marsAge.checkMarsAge()).toEqual(197);
+    expect(marsAge.remainingMarsLife()).toEqual();
   });
 
   test('should correctly calculate users Jupiter age', () =>{

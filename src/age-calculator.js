@@ -38,7 +38,11 @@ export class AgeCalculator{
   }
 
   remainingMarsLife(){
-    return this.lifeExpectany = this.lifeExpectancy*1.88 - this.age;
+    this.lifeExpectancy = this.lifeExpectancy*1.88 - this.age;
+    if (this.lifeExpectancy < 0) {
+      return this.lifeExpectancy * -1;
+    }
+    return this.lifeExpectancy;
   }
 
   remainingJupiterLife(){

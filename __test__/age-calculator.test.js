@@ -20,7 +20,7 @@ describe ('AgeCalculator', () => {
     let venusAge = new AgeCalculator ("Sisi",105,100);
     expect(venusAge.name).toEqual("Sisi");
     expect(venusAge.checkVenusAge()).toEqual(65);
-    expect(venusAge.remainingVenusLife()).toEqual();
+    expect(venusAge.remainingVenusLife()).toEqual(1);
   });
 
   test('should correctly calculate users Mars age', () =>{

@@ -31,10 +31,10 @@ describe ('AgeCalculator', () => {
   });
 
   test('should correctly calculate users Jupiter age', () =>{
-    let jupiterAge = new AgeCalculator ("Sisi",15,100);
+    let jupiterAge = new AgeCalculator ("Sisi",105,100);
     expect(jupiterAge.name).toEqual("Sisi");
-    expect(jupiterAge.checkJupiterAge()).toEqual(178);
-    expect(jupiterAge.remainingJupiterLife()).toEqual(1008);
+    expect(jupiterAge.checkJupiterAge()).toEqual(1245);
+    expect(jupiterAge.remainingJupiterLife()).toEqual();
   });
 
 });

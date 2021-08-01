@@ -9,11 +9,11 @@ describe ('AgeCalculator', () => {
     expect(ageCalculator.lifeExpectancy).toEqual(100);
   });
 
-  test('should correctly calculate users Mercury age',() =>{
-    let mercuryAge = new AgeCalculator ("Sisi",15,100);
+  test('should correctly calculate users Mercury age, remaining life or life passed expected to live',() =>{
+    let mercuryAge = new AgeCalculator ("Sisi",105,100);
     expect(mercuryAge.name).toEqual("Sisi");
-    expect(mercuryAge.checkMercuryAge()).toEqual(4);
-    expect(mercuryAge.remainingMercuryLife()).toEqual(20);
+    expect(mercuryAge.checkMercuryAge()).toEqual(25);
+    expect(mercuryAge.remainingMercuryLife()).toEqual(0);
   });
 
   test('should correctly calculate users Venus age', () =>{

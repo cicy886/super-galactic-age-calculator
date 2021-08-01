@@ -22,7 +22,11 @@ export class AgeCalculator{
   }
 
   remainingMercuryLife(){
-    return this.lifeExpectancy = this.lifeExpectancy*0.24 - this.age;
+    this.lifeExpectancy = this.lifeExpectancy*0.24 - this.age;
+    if (this.lifeExpectancy < 0) {
+      return this.lifeExpectancy * -1;
+    }
+    return this.lifeExpectancy;
   }
 
   remainingVenusLife(){

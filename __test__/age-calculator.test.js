@@ -34,7 +34,7 @@ describe ('AgeCalculator', () => {
     let jupiterAge = new AgeCalculator ("Sisi",105,100);
     expect(jupiterAge.name).toEqual("Sisi");
     expect(jupiterAge.checkJupiterAge()).toEqual(1245);
-    expect(jupiterAge.remainingJupiterLife()).toEqual(60);
+    expect(jupiterAge.remainingJupiterLife()).toEqual(59);
   });
 
 });

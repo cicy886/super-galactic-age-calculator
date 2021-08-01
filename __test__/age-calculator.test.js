@@ -27,7 +27,7 @@ describe ('AgeCalculator', () => {
     let marsAge = new AgeCalculator ("Sisi",105,100);
     expect(marsAge.name).toEqual("Sisi");
     expect(marsAge.checkMarsAge()).toEqual(197);
-    expect(marsAge.remainingMarsLife()).toEqual(10);
+    expect(marsAge.remainingMarsLife()).toEqual(9);
   });
 
   test('should correctly calculate users Jupiter age', () =>{

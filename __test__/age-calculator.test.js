@@ -13,13 +13,14 @@ describe ('AgeCalculator', () => {
     let mercuryAge = new AgeCalculator ("Sisi",15,100);
     expect(mercuryAge.name).toEqual("Sisi");
     expect(mercuryAge.checkMercuryAge()).toEqual(4);
-    expect(mercuryAge.remainingMercuryLife()).toEqual(58);
+    expect(mercuryAge.remainingMercuryLife()).toEqual(20);
   });
 
   test('should correctly calculate users Venus age', () =>{
-    let venusAge = new AgeCalculator ("Sisi",15);
+    let venusAge = new AgeCalculator ("Sisi",15,100);
     expect(venusAge.name).toEqual("Sisi");
     expect(venusAge.checkVenusAge()).toEqual(9);
+    expect(venusAge.remainingVenusLife()).toEqual(53);
   });
 
   test('should correctly calculate users Mars age', () =>{

@@ -22,6 +22,9 @@ export class AgeCalculator{
   }
 
   remainingMercuryLife(){
-    return this.lifeExpectancy = this.lifeExpectancy*0.62 - this.age;
+    return this.lifeExpectancy = this.lifeExpectancy*0.24 - this.age;
   }
+
+
+
 }
